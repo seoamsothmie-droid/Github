@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
- <h1>PHP with HTML Form</h1>
-<form method="post">
-<p>pname : <input type="text" name="pname"></p>
-<p>qty : <input type="text" name="qty"></p>
-<p>price : <input type="text" name="price"></p>
-<input type="submit" name="submit" value="submit">
-<input type="reset" name="reset" value="reset">
-</form>
-<hr>
-<?php
-if(isset($_POST['submit'])){
-$pname = $_POST["pname"];
-$qty = $_POST["qty"];
-$price = $_POST["price"];
-$amount = $qty * $price;
-//output : print or echo
-echo("<p>Product Name : " . $pname . "</p>");
-echo("<p>Product Quantity : " . $qty . "</p>");
-echo("<p>Product Price : $price</p>");
-echo("<p>Amount : $amount</p>");
-}
-?>   
-</body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title></title> 
+    <style> 
+        h3{ 
+            background:gray; 
+            padding:5px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h3>PHP - Array, String and Date</h3> 
+    <hr> 
+    <p><a href="Ex01.php">Ex01 : Create  Indexed Array</a><p> 
+    <p><a href="Ex02.php">Ex02 : Create Associative Array</a><p> 
+    <p><a href="Ex03.php">Ex03 : Create 2-D Indexed Array</a><p> 
+    <p><a href="Ex04.php">Ex04 : Create 2-D Associative Array</a><p> 
+    <p><a href="Ex05.php">Ex05 : Array 2-D(Row : Indexed, Column : Associative)</a><p> 
+    <p><a href="Ex06.php">Ex06 : Array 2-D (Row : Associative, Column : Indexed)</a><p> 
+    <p><a href="Ex07.php">Ex07 : Array 1D - Search and Sort</a><p> 
+    <p><a href="Ex08.php">Ex08 : Array 2D - Search and Sort</a><p> 
+ 
+</body> 
+</html> 
